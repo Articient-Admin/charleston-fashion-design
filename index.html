@@ -6,20 +6,20 @@
   <title>Charleston Fashion & Design — CFD 2026</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap');
     body { font-family: 'Playfair Display', Georgia, serif; }
-    nav, button, .sans { font-family: 'Inter', system-ui, sans-serif; }
+    nav, button, a.btn, .sans { font-family: 'Inter', system-ui, sans-serif; }
   </style>
 </head>
-<body class="min-h-screen bg-[#f4f0ea] text-[#2d2a26]">
+<body class="min-h-screen bg-[#0a0a0a] text-white">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-[#2f4b46]">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+  <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/5">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
       <a href="index.html" class="block">
         <div class="sans text-lg font-semibold uppercase tracking-[0.28em] text-white">Charleston Fashion &amp; Design</div>
       </a>
-      <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.22em] text-white/75 md:flex">
+      <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.22em] text-white/50 md:flex">
         <a href="#cfd2026" class="transition hover:text-white">CFD 2026</a>
         <a href="events.html" class="transition hover:text-white">Events</a>
         <a href="tickets.html" class="transition hover:text-white">Tickets</a>
@@ -27,10 +27,10 @@
         <a href="about.html" class="transition hover:text-white">About</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="about.html" class="sans rounded-full border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.18em] text-white/80 transition hover:border-white hover:text-white">
+        <a href="about.html" class="sans rounded-full border border-white/20 px-5 py-2 text-xs uppercase tracking-[0.18em] text-white/60 transition hover:border-white/50 hover:text-white">
           Learn More
         </a>
-        <a href="tickets.html" class="sans rounded-full bg-[#a8926f] px-5 py-2 text-xs uppercase tracking-[0.18em] text-white shadow-sm transition hover:bg-[#927c5f]">
+        <a href="tickets.html" class="sans rounded-full bg-white px-5 py-2 text-xs uppercase tracking-[0.18em] text-black shadow-sm transition hover:bg-white/90">
           Get Tickets
         </a>
       </div>
@@ -40,29 +40,31 @@
   <main>
 
     <!-- Hero -->
-    <section id="cfd2026" class="relative min-h-[92vh] overflow-hidden">
+    <section id="cfd2026" class="relative h-screen overflow-hidden">
       <img
         src="https://images.pexels.com/photos/28992033/pexels-photo-28992033.jpeg?auto=compress&cs=tinysrgb&w=1600"
         alt="CFD 2026 fashion editorial"
-        class="absolute inset-0 h-full w-full object-cover object-top"
+        class="absolute inset-0 h-full w-full object-cover object-top scale-105"
       />
-      <div class="absolute inset-0 bg-gradient-to-t from-[#1a1410]/90 via-[#1a1410]/30 to-[#1a1410]/10"></div>
-      <div class="absolute bottom-0 left-0 right-0 px-8 pb-14 lg:px-16 lg:pb-20">
-        <div class="sans mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.28em] text-white/80 backdrop-blur-sm">
-          <span class="h-1.5 w-1.5 rounded-full bg-[#b69b77]"></span>
-          Signature Event — Spring 2026
+      <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20"></div>
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="absolute bottom-0 left-0 right-0 px-8 pb-16 lg:px-16 lg:pb-24">
+        <div class="sans mb-6 inline-flex w-fit items-center gap-3 border border-white/20 px-5 py-2.5 text-[10px] uppercase tracking-[0.35em] text-white/60">
+          <span class="h-1.5 w-1.5 rounded-full bg-white"></span>
+          Spring 2026 — Charleston, SC
         </div>
-        <h1 class="text-[clamp(3.5rem,10vw,8rem)] font-normal leading-[0.9] text-white">
-          The Inaugural<br />CFD 2026
+        <div class="sans text-lg font-medium uppercase tracking-[0.35em] text-white/60 md:text-xl">Charleston Fashion &amp; Design</div>
+        <h1 class="mt-3 text-[clamp(5rem,15vw,13rem)] font-black leading-[0.85] tracking-tight text-white">
+          CFD 2026
         </h1>
-        <p class="sans mt-6 max-w-xl text-lg font-light leading-8 text-white/75">
-          A refined gathering in Charleston celebrating fashion, interiors, craftsmanship, and contemporary Southern design.
+        <p class="sans mt-8 max-w-lg text-base font-light leading-7 text-white/50">
+          A refined gathering celebrating fashion, interiors, craftsmanship, and contemporary Southern design.
         </p>
-        <div class="mt-8 flex flex-wrap gap-4">
-          <a href="tickets.html" class="sans rounded-full bg-[#a8926f] px-8 py-3.5 text-sm uppercase tracking-[0.2em] text-white shadow-lg transition hover:bg-[#927c5f]">
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a href="tickets.html" class="sans rounded-none bg-white px-10 py-4 text-xs font-semibold uppercase tracking-[0.25em] text-black transition hover:bg-white/90">
             Get Tickets
           </a>
-          <a href="events.html" class="sans rounded-full border border-white/50 px-8 py-3.5 text-sm uppercase tracking-[0.2em] text-white transition hover:bg-white/10">
+          <a href="events.html" class="sans rounded-none border border-white/30 px-10 py-4 text-xs uppercase tracking-[0.25em] text-white/70 transition hover:border-white hover:text-white">
             Explore the Runway
           </a>
         </div>
@@ -70,73 +72,73 @@
     </section>
 
     <!-- Stats strip -->
-    <section class="border-y border-[#ddd2c7] bg-[#efe8de]">
-      <div class="sans mx-auto grid max-w-7xl gap-8 px-6 py-8 text-sm uppercase tracking-[0.18em] text-[#7b6d5f] md:grid-cols-3 lg:px-10">
+    <section class="border-y border-white/10 bg-black">
+      <div class="sans mx-auto grid max-w-7xl gap-8 px-6 py-10 text-[11px] uppercase tracking-[0.22em] text-white/40 md:grid-cols-3 lg:px-10">
         <div>
-          <div class="mb-2 text-3xl text-[#3c3936]" style="font-family:'Playfair Display',serif">3</div>
+          <div class="mb-3 text-5xl font-bold tracking-tight text-white" style="font-family:'Playfair Display',serif">3</div>
           Annual events with one marquee season anchor
         </div>
         <div>
-          <div class="mb-2 text-3xl text-[#3c3936]" style="font-family:'Playfair Display',serif">CFD 2026</div>
+          <div class="mb-3 text-5xl font-bold tracking-tight text-white" style="font-family:'Playfair Display',serif">CFD</div>
           Local and national fashion designers featured
         </div>
         <div>
-          <div class="mb-2 text-3xl text-[#3c3936]" style="font-family:'Playfair Display',serif">Sponsors</div>
+          <div class="mb-3 text-5xl font-bold tracking-tight text-white" style="font-family:'Playfair Display',serif">2026</div>
           Hospitality, retail, design, and cultural partners
         </div>
       </div>
     </section>
 
     <!-- Events -->
-    <section id="events" class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-      <div class="mb-10 flex items-end justify-between gap-6">
+    <section id="events" class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+      <div class="mb-14 flex items-end justify-between gap-6">
         <div>
-          <div class="sans text-xs uppercase tracking-[0.24em] text-[#8c7a61]">Year-round platform</div>
-          <h2 class="mt-3 text-4xl text-[#3c3936]">A quieter, more elevated event structure</h2>
+          <div class="sans text-[10px] uppercase tracking-[0.35em] text-white/40">Year-round platform</div>
+          <h2 class="mt-4 text-5xl font-bold leading-tight text-white lg:text-6xl">A quieter, more<br />elevated structure</h2>
         </div>
-        <a href="about.html" class="sans hidden text-sm uppercase tracking-[0.16em] text-[#7d6a52] underline underline-offset-4 md:block">Learn More</a>
+        <a href="about.html" class="sans hidden text-xs uppercase tracking-[0.18em] text-white/40 underline underline-offset-4 transition hover:text-white md:block">Learn More</a>
       </div>
       <div class="grid gap-6 md:grid-cols-3">
 
         <!-- Card 1 -->
-        <div class="overflow-hidden rounded-[1.75rem] border border-[#d8cec1] bg-white shadow-[0_18px_60px_rgba(60,44,22,0.06)]">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.pexels.com/photos/12797176/pexels-photo-12797176.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="CFD 2026" class="h-full w-full object-cover transition duration-500 hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#1a1410]/30 to-transparent"></div>
+        <div class="group overflow-hidden border border-white/10 bg-[#111]">
+          <div class="relative h-72 overflow-hidden">
+            <img src="https://images.pexels.com/photos/12797176/pexels-photo-12797176.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="CFD 2026" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           </div>
-          <div class="p-6">
-            <div class="sans text-xs uppercase tracking-[0.22em] text-[#8c7a61]">March 2026</div>
-            <h3 class="mt-3 text-2xl text-[#3c3936]">CFD 2026</h3>
-            <p class="sans mt-4 text-base font-light leading-7 text-[#655d56]">The flagship multi-day gathering with runway presentations, designer talks, private brand dinners, and cultural programming across Charleston.</p>
-            <a href="tickets.html" class="sans mt-6 inline-block rounded-full border border-[#b9a88f] px-5 py-2 text-xs uppercase tracking-[0.18em] text-[#6f5d48] transition hover:bg-[#f3ece2]">Get Tickets</a>
+          <div class="p-7">
+            <div class="sans text-[10px] uppercase tracking-[0.3em] text-white/40">March 2026</div>
+            <h3 class="mt-3 text-3xl font-bold text-white">CFD 2026</h3>
+            <p class="sans mt-4 text-sm font-light leading-7 text-white/50">The flagship multi-day gathering with runway presentations, designer talks, private brand dinners, and cultural programming across Charleston.</p>
+            <a href="tickets.html" class="sans mt-6 inline-block border border-white/20 px-5 py-2.5 text-[10px] uppercase tracking-[0.22em] text-white/60 transition hover:border-white hover:text-white">Get Tickets</a>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="overflow-hidden rounded-[1.75rem] border border-[#d8cec1] bg-white shadow-[0_18px_60px_rgba(60,44,22,0.06)]">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.pexels.com/photos/13067890/pexels-photo-13067890.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Design Salon" class="h-full w-full object-cover transition duration-500 hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#1a1410]/30 to-transparent"></div>
+        <div class="group overflow-hidden border border-white/10 bg-[#111]">
+          <div class="relative h-72 overflow-hidden">
+            <img src="https://images.pexels.com/photos/13067890/pexels-photo-13067890.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Design Salon" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           </div>
-          <div class="p-6">
-            <div class="sans text-xs uppercase tracking-[0.22em] text-[#8c7a61]">Summer 2026</div>
-            <h3 class="mt-3 text-2xl text-[#3c3936]">Design Salon</h3>
-            <p class="sans mt-4 text-base font-light leading-7 text-[#655d56]">An intimate event series spotlighting interiors, architecture, craftsmanship, and the makers shaping Southern design.</p>
-            <a href="about.html" class="sans mt-6 inline-block rounded-full border border-[#b9a88f] px-5 py-2 text-xs uppercase tracking-[0.18em] text-[#6f5d48] transition hover:bg-[#f3ece2]">Learn More</a>
+          <div class="p-7">
+            <div class="sans text-[10px] uppercase tracking-[0.3em] text-white/40">Summer 2026</div>
+            <h3 class="mt-3 text-3xl font-bold text-white">Design Salon</h3>
+            <p class="sans mt-4 text-sm font-light leading-7 text-white/50">An intimate event series spotlighting interiors, architecture, craftsmanship, and the makers shaping Southern design.</p>
+            <a href="about.html" class="sans mt-6 inline-block border border-white/20 px-5 py-2.5 text-[10px] uppercase tracking-[0.22em] text-white/60 transition hover:border-white hover:text-white">Learn More</a>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="overflow-hidden rounded-[1.75rem] border border-[#d8cec1] bg-white shadow-[0_18px_60px_rgba(60,44,22,0.06)]">
-          <div class="relative h-56 overflow-hidden">
-            <img src="https://images.pexels.com/photos/5865276/pexels-photo-5865276.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Holiday Atelier" class="h-full w-full object-cover transition duration-500 hover:scale-105" />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#1a1410]/30 to-transparent"></div>
+        <div class="group overflow-hidden border border-white/10 bg-[#111]">
+          <div class="relative h-72 overflow-hidden">
+            <img src="https://images.pexels.com/photos/5865276/pexels-photo-5865276.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Holiday Atelier" class="h-full w-full object-cover transition duration-700 group-hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
           </div>
-          <div class="p-6">
-            <div class="sans text-xs uppercase tracking-[0.22em] text-[#8c7a61]">Winter 2026</div>
-            <h3 class="mt-3 text-2xl text-[#3c3936]">Holiday Atelier</h3>
-            <p class="sans mt-4 text-base font-light leading-7 text-[#655d56]">A curated seasonal program with trunk shows, collectible objects, and Charleston-hosted gatherings for patrons and partners.</p>
-            <a href="sponsorships.html" class="sans mt-6 inline-block rounded-full border border-[#b9a88f] px-5 py-2 text-xs uppercase tracking-[0.18em] text-[#6f5d48] transition hover:bg-[#f3ece2]">Sponsorships</a>
+          <div class="p-7">
+            <div class="sans text-[10px] uppercase tracking-[0.3em] text-white/40">Winter 2026</div>
+            <h3 class="mt-3 text-3xl font-bold text-white">Holiday Atelier</h3>
+            <p class="sans mt-4 text-sm font-light leading-7 text-white/50">A curated seasonal program with trunk shows, collectible objects, and Charleston-hosted gatherings for patrons and partners.</p>
+            <a href="sponsorships.html" class="sans mt-6 inline-block border border-white/20 px-5 py-2.5 text-[10px] uppercase tracking-[0.22em] text-white/60 transition hover:border-white hover:text-white">Sponsorships</a>
           </div>
         </div>
 
@@ -144,36 +146,36 @@
     </section>
 
     <!-- Tickets -->
-    <section id="tickets" class="bg-[#f7f3ed] py-20">
-      <div class="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-10">
+    <section id="tickets" class="border-y border-white/10 bg-[#111] py-24">
+      <div class="mx-auto grid max-w-7xl gap-14 px-6 lg:grid-cols-[0.85fr_1.15fr] lg:px-10">
         <div>
-          <div class="sans text-xs uppercase tracking-[0.24em] text-[#8c7a61]">Tickets</div>
-          <h2 class="mt-3 text-4xl text-[#3c3936]">Designed to feel accessible, but still rare.</h2>
-          <p class="sans mt-5 max-w-lg text-lg font-light leading-8 text-[#615952]">
+          <div class="sans text-[10px] uppercase tracking-[0.35em] text-white/40">Tickets</div>
+          <h2 class="mt-4 text-5xl font-bold leading-tight text-white">Accessible,<br />but still <em class="font-light italic">rare.</em></h2>
+          <p class="sans mt-6 max-w-lg text-base font-light leading-8 text-white/40">
             CFD 2026 is a polished cultural event — not a loud festival. Each tier offers a distinct level of access to Charleston's most refined fashion and design gathering.
           </p>
         </div>
         <div class="grid gap-5 md:grid-cols-3">
 
-          <div class="rounded-[1.5rem] border border-[#d8cec1] bg-white p-6 shadow-[0_12px_40px_rgba(60,44,22,0.05)]">
-            <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Preview Pass</div>
-            <div class="mt-4 text-4xl text-[#3c3936]">$95</div>
-            <p class="sans mt-4 text-sm font-light leading-7 text-[#645d56]">Opening-night access and select talks</p>
-            <a href="tickets.html" class="sans mt-6 inline-block rounded-full bg-[#2f4b46] px-5 py-2 text-xs uppercase tracking-[0.18em] text-white transition hover:bg-[#243b37]">Get Tickets</a>
+          <div class="border border-white/10 bg-black p-7">
+            <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Preview Pass</div>
+            <div class="mt-5 text-5xl font-bold text-white">$95</div>
+            <p class="sans mt-4 text-sm font-light leading-7 text-white/40">Opening-night access and select talks</p>
+            <a href="tickets.html" class="sans mt-8 inline-block bg-white px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-black transition hover:bg-white/90">Get Tickets</a>
           </div>
 
-          <div class="rounded-[1.5rem] border border-[#d8cec1] bg-white p-6 shadow-[0_12px_40px_rgba(60,44,22,0.05)]">
-            <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Weekend Pass</div>
-            <div class="mt-4 text-4xl text-[#3c3936]">$285</div>
-            <p class="sans mt-4 text-sm font-light leading-7 text-[#645d56]">Core runway, conversations, and partner events</p>
-            <a href="tickets.html" class="sans mt-6 inline-block rounded-full bg-[#2f4b46] px-5 py-2 text-xs uppercase tracking-[0.18em] text-white transition hover:bg-[#243b37]">Get Tickets</a>
+          <div class="border border-white/10 bg-black p-7">
+            <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Weekend Pass</div>
+            <div class="mt-5 text-5xl font-bold text-white">$285</div>
+            <p class="sans mt-4 text-sm font-light leading-7 text-white/40">Core runway, conversations, and partner events</p>
+            <a href="tickets.html" class="sans mt-8 inline-block bg-white px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-black transition hover:bg-white/90">Get Tickets</a>
           </div>
 
-          <div class="rounded-[1.5rem] border border-[#d8cec1] bg-white p-6 shadow-[0_12px_40px_rgba(60,44,22,0.05)]">
-            <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Patron Access</div>
-            <div class="mt-4 text-4xl text-[#3c3936]">$750</div>
-            <p class="sans mt-4 text-sm font-light leading-7 text-[#645d56]">Priority seating, dinners, and private receptions</p>
-            <a href="tickets.html" class="sans mt-6 inline-block rounded-full bg-[#2f4b46] px-5 py-2 text-xs uppercase tracking-[0.18em] text-white transition hover:bg-[#243b37]">Get Tickets</a>
+          <div class="border border-white/10 bg-black p-7">
+            <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Patron Access</div>
+            <div class="mt-5 text-5xl font-bold text-white">$750</div>
+            <p class="sans mt-4 text-sm font-light leading-7 text-white/40">Priority seating, dinners, and private receptions</p>
+            <a href="tickets.html" class="sans mt-8 inline-block bg-white px-5 py-2.5 text-[10px] font-semibold uppercase tracking-[0.22em] text-black transition hover:bg-white/90">Get Tickets</a>
           </div>
 
         </div>
@@ -181,21 +183,21 @@
     </section>
 
     <!-- Sponsorships -->
-    <section id="sponsorships" class="mx-auto max-w-7xl px-6 py-20 lg:px-10">
-      <div class="grid gap-8 rounded-[2rem] border border-[#d8cec1] bg-[#2f4b46] p-8 text-white shadow-[0_18px_70px_rgba(20,24,24,0.18)] md:grid-cols-[1.1fr_0.9fr] md:p-12">
+    <section id="sponsorships" class="mx-auto max-w-7xl px-6 py-24 lg:px-10">
+      <div class="grid gap-12 border border-white/10 bg-[#111] p-10 md:grid-cols-[1.1fr_0.9fr] md:p-14">
         <div>
-          <div class="sans text-xs uppercase tracking-[0.24em] text-white/70">Sponsorships</div>
-          <h2 class="mt-3 text-4xl">Partner with a more polished Charleston platform.</h2>
-          <p class="sans mt-5 max-w-2xl text-lg font-light leading-8 text-white/85">
+          <div class="sans text-[10px] uppercase tracking-[0.35em] text-white/40">Sponsorships</div>
+          <h2 class="mt-4 text-5xl font-bold leading-tight text-white">Partner with a <em class="font-light italic">polished</em> platform.</h2>
+          <p class="sans mt-6 max-w-2xl text-base font-light leading-8 text-white/40">
             CFD brings together hospitality, retail, design, and cultural institutions under one elegant seasonal platform. Sponsorship positions your brand at the center of Charleston's creative economy.
           </p>
         </div>
-        <div class="grid gap-4 self-start sm:grid-cols-2">
-          <div class="sans rounded-[1.25rem] border border-white/15 bg-white/10 p-4 text-sm uppercase tracking-[0.16em] text-white/90">Hospitality Partners</div>
-          <div class="sans rounded-[1.25rem] border border-white/15 bg-white/10 p-4 text-sm uppercase tracking-[0.16em] text-white/90">Retail &amp; Luxury</div>
-          <div class="sans rounded-[1.25rem] border border-white/15 bg-white/10 p-4 text-sm uppercase tracking-[0.16em] text-white/90">Design &amp; Home</div>
-          <div class="sans rounded-[1.25rem] border border-white/15 bg-white/10 p-4 text-sm uppercase tracking-[0.16em] text-white/90">Cultural Institutions</div>
-          <a href="sponsorships.html" class="sans sm:col-span-2 mt-2 inline-block rounded-full bg-white px-6 py-3 text-center text-sm uppercase tracking-[0.18em] text-[#2f4b46] transition hover:bg-[#efe8de]">
+        <div class="grid gap-3 self-start sm:grid-cols-2">
+          <div class="sans border border-white/10 bg-white/5 p-4 text-[10px] uppercase tracking-[0.2em] text-white/60">Hospitality Partners</div>
+          <div class="sans border border-white/10 bg-white/5 p-4 text-[10px] uppercase tracking-[0.2em] text-white/60">Retail &amp; Luxury</div>
+          <div class="sans border border-white/10 bg-white/5 p-4 text-[10px] uppercase tracking-[0.2em] text-white/60">Design &amp; Home</div>
+          <div class="sans border border-white/10 bg-white/5 p-4 text-[10px] uppercase tracking-[0.2em] text-white/60">Cultural Institutions</div>
+          <a href="sponsorships.html" class="sans sm:col-span-2 mt-2 inline-block bg-white px-6 py-3.5 text-center text-xs font-semibold uppercase tracking-[0.22em] text-black transition hover:bg-white/90">
             View Sponsorship Deck
           </a>
         </div>
@@ -203,27 +205,27 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="border-t border-[#ddd2c7] bg-[#efe8de] py-16">
+    <section id="about" class="border-t border-white/10 bg-[#111] py-20">
       <div class="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-4 lg:px-10">
 
-        <div class="rounded-[1.5rem] bg-white/70 p-6">
-          <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Hero structure</div>
-          <p class="sans mt-4 text-base font-light leading-7 text-[#615952]">Full bleed fashion editorial with bold headline and dual CTAs — Get Tickets and Explore the Runway.</p>
+        <div class="border border-white/10 bg-white/5 p-7">
+          <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Hero structure</div>
+          <p class="sans mt-5 text-sm font-light leading-7 text-white/50">Full bleed fashion editorial with bold headline and dual CTAs — Get Tickets and Explore the Runway.</p>
         </div>
 
-        <div class="rounded-[1.5rem] bg-white/70 p-6">
-          <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Southern tone</div>
-          <p class="sans mt-4 text-base font-light leading-7 text-[#615952]">Warm neutrals, restrained serif typography, and Charleston imagery rooted in place.</p>
+        <div class="border border-white/10 bg-white/5 p-7">
+          <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Southern tone</div>
+          <p class="sans mt-5 text-sm font-light leading-7 text-white/50">Warm neutrals, restrained serif typography, and Charleston imagery rooted in place.</p>
         </div>
 
-        <div class="rounded-[1.5rem] bg-white/70 p-6">
-          <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Navigation</div>
-          <p class="sans mt-4 text-base font-light leading-7 text-[#615952]">Dark forest green header anchors the brand. CFD 2026 leads, with Events, Tickets, Sponsorships, and About immediately accessible.</p>
+        <div class="border border-white/10 bg-white/5 p-7">
+          <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Navigation</div>
+          <p class="sans mt-5 text-sm font-light leading-7 text-white/50">Dark header anchors the brand. CFD 2026 leads, with Events, Tickets, Sponsorships, and About immediately accessible.</p>
         </div>
 
-        <div class="rounded-[1.5rem] bg-white/70 p-6">
-          <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Photo direction</div>
-          <p class="sans mt-4 text-base font-light leading-7 text-[#615952]">Fashion editorial imagery for the hero. Charleston architecture and Southern interiors for event cards.</p>
+        <div class="border border-white/10 bg-white/5 p-7">
+          <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Photo direction</div>
+          <p class="sans mt-5 text-sm font-light leading-7 text-white/50">Fashion editorial imagery for the hero. Charleston architecture and Southern interiors for event cards.</p>
         </div>
 
       </div>
@@ -232,14 +234,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-[#ddd2c7] bg-[#2f4b46]">
-    <div class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+  <footer class="border-t border-white/10 bg-black">
+    <div class="mx-auto max-w-7xl px-6 py-14 lg:px-10">
       <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div>
-          <div class="sans text-lg font-semibold uppercase tracking-[0.28em] text-[#a8c4be]">Charleston Fashion &amp; Design</div>
-          <div class="mt-0.5 text-xl tracking-[0.12em] text-white">CFD</div>
+          <div class="sans text-lg font-semibold uppercase tracking-[0.28em] text-white">Charleston Fashion &amp; Design</div>
         </div>
-        <nav class="sans flex flex-wrap items-center justify-center gap-6 text-xs uppercase tracking-[0.18em] text-white/60">
+        <nav class="sans flex flex-wrap items-center justify-center gap-6 text-[10px] uppercase tracking-[0.22em] text-white/30">
           <a href="index.html" class="transition hover:text-white">CFD 2026</a>
           <a href="events.html" class="transition hover:text-white">Events</a>
           <a href="tickets.html" class="transition hover:text-white">Tickets</a>
@@ -247,7 +248,7 @@
           <a href="about.html" class="transition hover:text-white">About</a>
         </nav>
       </div>
-      <div class="sans mt-8 border-t border-white/10 pt-6 text-center text-xs tracking-[0.12em] text-white/40">
+      <div class="sans mt-10 border-t border-white/5 pt-6 text-center text-[10px] tracking-[0.15em] text-white/20">
         &copy; 2026 Charleston Fashion &amp; Design. All rights reserved.
       </div>
     </div>

@@ -6,20 +6,20 @@
   <title>Tickets — Charleston Fashion & Design</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap');
     body { font-family: 'Playfair Display', Georgia, serif; }
-    nav, button, .sans { font-family: 'Inter', system-ui, sans-serif; }
+    nav, button, a.btn, .sans { font-family: 'Inter', system-ui, sans-serif; }
   </style>
 </head>
-<body class="min-h-screen bg-[#f4f0ea] text-[#2d2a26]">
+<body class="min-h-screen bg-[#0a0a0a] text-white">
 
   <!-- Header -->
-  <header class="sticky top-0 z-50 bg-[#2f4b46]">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
+  <header class="sticky top-0 z-50 bg-black/90 backdrop-blur-md border-b border-white/5">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-5 lg:px-10">
       <a href="index.html" class="block">
         <div class="sans text-lg font-semibold uppercase tracking-[0.28em] text-white">Charleston Fashion &amp; Design</div>
       </a>
-      <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.22em] text-white/75 md:flex">
+      <nav class="hidden items-center gap-8 text-xs uppercase tracking-[0.22em] text-white/50 md:flex">
         <a href="index.html" class="transition hover:text-white">CFD 2026</a>
         <a href="events.html" class="transition hover:text-white">Events</a>
         <a href="tickets.html" class="text-white">Tickets</a>
@@ -27,10 +27,10 @@
         <a href="about.html" class="transition hover:text-white">About</a>
       </nav>
       <div class="flex items-center gap-3">
-        <a href="about.html" class="sans rounded-full border border-white/30 px-5 py-2 text-xs uppercase tracking-[0.18em] text-white/80 transition hover:border-white hover:text-white">
+        <a href="about.html" class="sans rounded-full border border-white/20 px-5 py-2 text-xs uppercase tracking-[0.18em] text-white/60 transition hover:border-white/50 hover:text-white">
           Learn More
         </a>
-        <a href="tickets.html" class="sans rounded-full bg-[#a8926f] px-5 py-2 text-xs uppercase tracking-[0.18em] text-white shadow-sm transition hover:bg-[#927c5f]">
+        <a href="tickets.html" class="sans rounded-full bg-white px-5 py-2 text-xs uppercase tracking-[0.18em] text-black shadow-sm transition hover:bg-white/90">
           Get Tickets
         </a>
       </div>
@@ -40,11 +40,11 @@
   <main>
 
     <!-- Page Hero -->
-    <section class="border-b border-[#ddd2c7] bg-[#efe8de] py-16">
+    <section class="border-b border-white/10 bg-[#111] py-16">
       <div class="mx-auto max-w-7xl px-6 lg:px-10">
-        <div class="sans text-xs uppercase tracking-[0.24em] text-[#8c7a61]">CFD 2026</div>
-        <h1 class="mt-3 text-5xl text-[#3c3936] lg:text-6xl">Tickets</h1>
-        <p class="sans mt-5 max-w-2xl text-lg font-light leading-8 text-[#615952]">
+        <div class="sans text-[10px] uppercase tracking-[0.35em] text-white/40">CFD 2026</div>
+        <h1 class="mt-4 text-5xl font-bold text-white lg:text-6xl">Tickets</h1>
+        <p class="sans mt-5 max-w-2xl text-lg font-light leading-8 text-white/50">
           Designed to feel accessible, but still rare. Each tier offers a distinct level of access to Charleston's most refined fashion and design gathering.
         </p>
       </div>
@@ -55,82 +55,82 @@
       <div class="grid gap-8 lg:grid-cols-3">
 
         <!-- Preview Pass -->
-        <div class="flex flex-col rounded-[1.75rem] border border-[#d8cec1] bg-white shadow-[0_18px_60px_rgba(60,44,22,0.06)]">
+        <div class="flex flex-col border border-white/10 bg-[#111]">
           <div class="p-8">
-            <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Preview Pass</div>
-            <div class="mt-4 text-5xl text-[#3c3936]">$95</div>
-            <p class="sans mt-4 text-base font-light leading-7 text-[#655d56]">
+            <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Preview Pass</div>
+            <div class="mt-5 text-5xl font-bold text-white">$95</div>
+            <p class="sans mt-4 text-base font-light leading-7 text-white/50">
               Your introduction to CFD. Opening-night access and a curated selection of talks and panels to experience the spirit of the event.
             </p>
           </div>
-          <div class="flex-1 border-t border-[#ede6dc] p-8">
-            <div class="sans text-xs font-medium uppercase tracking-[0.18em] text-[#8c7a61]">What's Included</div>
-            <ul class="sans mt-4 space-y-3 text-sm font-light leading-6 text-[#655d56]">
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Opening Night Reception access</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Two designer talks or panel sessions</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Welcome gift and event program</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Access to the pop-up designer market</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Thursday evening only</li>
+          <div class="flex-1 border-t border-white/10 p-8">
+            <div class="sans text-[10px] font-medium uppercase tracking-[0.25em] text-white/40">What's Included</div>
+            <ul class="sans mt-4 space-y-3 text-sm font-light leading-6 text-white/50">
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Opening Night Reception access</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Two designer talks or panel sessions</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Welcome gift and event program</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Access to the pop-up designer market</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Thursday evening only</li>
             </ul>
           </div>
           <div class="p-8 pt-0">
-            <button class="sans w-full rounded-full bg-[#2f4b46] px-5 py-3.5 text-sm uppercase tracking-[0.18em] text-white transition hover:bg-[#243b37]">Select Preview Pass</button>
+            <button class="sans w-full border border-white/20 px-5 py-3.5 text-xs uppercase tracking-[0.18em] text-white/60 transition hover:border-white hover:text-white">Select Preview Pass</button>
           </div>
         </div>
 
         <!-- Weekend Pass -->
-        <div class="relative flex flex-col rounded-[1.75rem] border-2 border-[#a8926f] bg-white shadow-[0_18px_60px_rgba(60,44,22,0.1)]">
+        <div class="relative flex flex-col border-2 border-white/30 bg-[#111]">
           <div class="absolute -top-3 left-1/2 -translate-x-1/2">
-            <span class="sans rounded-full bg-[#a8926f] px-4 py-1 text-xs uppercase tracking-[0.18em] text-white">Most Popular</span>
+            <span class="sans bg-white px-4 py-1 text-[10px] uppercase tracking-[0.18em] text-black">Most Popular</span>
           </div>
           <div class="p-8">
-            <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Weekend Pass</div>
-            <div class="mt-4 text-5xl text-[#3c3936]">$285</div>
-            <p class="sans mt-4 text-base font-light leading-7 text-[#655d56]">
+            <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Weekend Pass</div>
+            <div class="mt-5 text-5xl font-bold text-white">$285</div>
+            <p class="sans mt-4 text-base font-light leading-7 text-white/50">
               The core CFD experience. Full access to runway presentations, conversations, and partner events across the entire weekend.
             </p>
           </div>
-          <div class="flex-1 border-t border-[#ede6dc] p-8">
-            <div class="sans text-xs font-medium uppercase tracking-[0.18em] text-[#8c7a61]">What's Included</div>
-            <ul class="sans mt-4 space-y-3 text-sm font-light leading-6 text-[#655d56]">
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> All Preview Pass benefits</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Full weekend access (Friday &ndash; Sunday)</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> All runway presentations</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Designer talks, panels, and workshops</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Partner-hosted events and receptions</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Closing brunch and awards ceremony</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Priority access to the designer market</li>
+          <div class="flex-1 border-t border-white/10 p-8">
+            <div class="sans text-[10px] font-medium uppercase tracking-[0.25em] text-white/40">What's Included</div>
+            <ul class="sans mt-4 space-y-3 text-sm font-light leading-6 text-white/50">
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> All Preview Pass benefits</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Full weekend access (Friday &ndash; Sunday)</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> All runway presentations</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Designer talks, panels, and workshops</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Partner-hosted events and receptions</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Closing brunch and awards ceremony</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Priority access to the designer market</li>
             </ul>
           </div>
           <div class="p-8 pt-0">
-            <button class="sans w-full rounded-full bg-[#a8926f] px-5 py-3.5 text-sm uppercase tracking-[0.18em] text-white shadow-lg transition hover:bg-[#927c5f]">Select Weekend Pass</button>
+            <button class="sans w-full bg-white px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.18em] text-black transition hover:bg-white/90">Select Weekend Pass</button>
           </div>
         </div>
 
         <!-- Patron Access -->
-        <div class="flex flex-col rounded-[1.75rem] border border-[#d8cec1] bg-white shadow-[0_18px_60px_rgba(60,44,22,0.06)]">
+        <div class="flex flex-col border border-white/10 bg-[#111]">
           <div class="p-8">
-            <div class="sans text-sm uppercase tracking-[0.2em] text-[#8c7a61]">Patron Access</div>
-            <div class="mt-4 text-5xl text-[#3c3936]">$750</div>
-            <p class="sans mt-4 text-base font-light leading-7 text-[#655d56]">
+            <div class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Patron Access</div>
+            <div class="mt-5 text-5xl font-bold text-white">$750</div>
+            <p class="sans mt-4 text-base font-light leading-7 text-white/50">
               The definitive CFD experience. Priority seating, private dinners, exclusive receptions, and behind-the-scenes access throughout the event.
             </p>
           </div>
-          <div class="flex-1 border-t border-[#ede6dc] p-8">
-            <div class="sans text-xs font-medium uppercase tracking-[0.18em] text-[#8c7a61]">What's Included</div>
-            <ul class="sans mt-4 space-y-3 text-sm font-light leading-6 text-[#655d56]">
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> All Weekend Pass benefits</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Priority front-row seating at all runways</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Patron-only welcome dinner (Thursday)</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Private designer reception (Saturday)</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Backstage and behind-the-scenes access</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Complimentary valet and concierge</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Year-round CFD membership and early access to future events</li>
-              <li class="flex gap-3"><span class="mt-0.5 text-[#a8926f]">&#10003;</span> Curated gift from a featured designer</li>
+          <div class="flex-1 border-t border-white/10 p-8">
+            <div class="sans text-[10px] font-medium uppercase tracking-[0.25em] text-white/40">What's Included</div>
+            <ul class="sans mt-4 space-y-3 text-sm font-light leading-6 text-white/50">
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> All Weekend Pass benefits</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Priority front-row seating at all runways</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Patron-only welcome dinner (Thursday)</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Private designer reception (Saturday)</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Backstage and behind-the-scenes access</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Complimentary valet and concierge</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Year-round CFD membership and early access to future events</li>
+              <li class="flex gap-3"><span class="mt-0.5 text-white/30">&#10003;</span> Curated gift from a featured designer</li>
             </ul>
           </div>
           <div class="p-8 pt-0">
-            <button class="sans w-full rounded-full bg-[#2f4b46] px-5 py-3.5 text-sm uppercase tracking-[0.18em] text-white transition hover:bg-[#243b37]">Select Patron Access</button>
+            <button class="sans w-full border border-white/20 px-5 py-3.5 text-xs uppercase tracking-[0.18em] text-white/60 transition hover:border-white hover:text-white">Select Patron Access</button>
           </div>
         </div>
 
@@ -138,15 +138,15 @@
     </section>
 
     <!-- FAQ / Note -->
-    <section class="border-t border-[#ddd2c7] bg-[#f7f3ed] py-16">
+    <section class="border-t border-white/10 bg-[#111] py-16">
       <div class="mx-auto max-w-3xl px-6 text-center lg:px-10">
-        <h2 class="text-3xl text-[#3c3936]">Questions about tickets?</h2>
-        <p class="sans mt-5 text-base font-light leading-7 text-[#655d56]">
-          All tickets are non-refundable but may be transferred. Group rates are available for parties of six or more. For special accommodations, accessibility needs, or any other questions, please reach out to us at <span class="font-medium text-[#3c3936]">tickets@charlestonfashiondesign.com</span>.
+        <h2 class="text-3xl font-bold text-white">Questions about <em class="font-light italic">tickets?</em></h2>
+        <p class="sans mt-5 text-base font-light leading-7 text-white/50">
+          All tickets are non-refundable but may be transferred. Group rates are available for parties of six or more. For special accommodations, accessibility needs, or any other questions, please reach out to us at <span class="font-medium text-white">tickets@charlestonfashiondesign.com</span>.
         </p>
         <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <a href="events.html" class="sans rounded-full border border-[#b9a88f] px-8 py-3.5 text-sm uppercase tracking-[0.2em] text-[#6f5d48] transition hover:bg-[#f3ece2]">View Full Schedule</a>
-          <a href="sponsorships.html" class="sans rounded-full border border-[#b9a88f] px-8 py-3.5 text-sm uppercase tracking-[0.2em] text-[#6f5d48] transition hover:bg-[#f3ece2]">Sponsorship Info</a>
+          <a href="events.html" class="sans border border-white/20 px-8 py-3.5 text-xs uppercase tracking-[0.22em] text-white/60 transition hover:border-white hover:text-white">View Full Schedule</a>
+          <a href="sponsorships.html" class="sans border border-white/20 px-8 py-3.5 text-xs uppercase tracking-[0.22em] text-white/60 transition hover:border-white hover:text-white">Sponsorship Info</a>
         </div>
       </div>
     </section>
@@ -154,14 +154,13 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-[#ddd2c7] bg-[#2f4b46]">
-    <div class="mx-auto max-w-7xl px-6 py-12 lg:px-10">
+  <footer class="border-t border-white/10 bg-black">
+    <div class="mx-auto max-w-7xl px-6 py-14 lg:px-10">
       <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
         <div>
-          <div class="sans text-lg font-semibold uppercase tracking-[0.28em] text-[#a8c4be]">Charleston Fashion &amp; Design</div>
-          <div class="mt-0.5 text-xl tracking-[0.12em] text-white">CFD</div>
+          <div class="sans text-lg font-semibold uppercase tracking-[0.28em] text-white">Charleston Fashion &amp; Design</div>
         </div>
-        <nav class="sans flex flex-wrap items-center justify-center gap-6 text-xs uppercase tracking-[0.18em] text-white/60">
+        <nav class="sans flex flex-wrap items-center justify-center gap-6 text-[10px] uppercase tracking-[0.22em] text-white/30">
           <a href="index.html" class="transition hover:text-white">CFD 2026</a>
           <a href="events.html" class="transition hover:text-white">Events</a>
           <a href="tickets.html" class="transition hover:text-white">Tickets</a>
@@ -169,7 +168,7 @@
           <a href="about.html" class="transition hover:text-white">About</a>
         </nav>
       </div>
-      <div class="sans mt-8 border-t border-white/10 pt-6 text-center text-xs tracking-[0.12em] text-white/40">
+      <div class="sans mt-10 border-t border-white/5 pt-6 text-center text-[10px] tracking-[0.15em] text-white/20">
         &copy; 2026 Charleston Fashion &amp; Design. All rights reserved.
       </div>
     </div>
