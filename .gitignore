@@ -1,0 +1,29 @@
+# --- Internal / working docs — never commit or publish ---
+CLAUDE.md
+CLAUDE_CODE_BRIEF.md
+WORKING_NOTES.md
+
+# Claude Code local settings
+.claude/
+
+# --- Source / content materials (used for reference, not served) ---
+*.pdf
+
+# Internal-only image (per brief: floorplan is not public-facing)
+images/gaillard-floorplan.jpg
+
+# --- Unrelated tooling ---
+RLFP-Tool/
+
+# --- Stray / junk files ---
+unnamed*.webp
+
+# --- Duplicate logo assets at root (canonical copies live in /logo) ---
+/CFD_logo_dark.png
+/CFD_logo_dark.svg
+/CFD_logo_light.png
+/CFD_logo_light.svg
+
+# OS cruft
+.DS_Store
+Thumbs.db
