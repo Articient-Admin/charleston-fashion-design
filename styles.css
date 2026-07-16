@@ -57,8 +57,8 @@ main {
 /* Section labels: the accent's structural home. Muted so it whispers rather
    than shouts, and recurs down the page so it reads as a system. */
 .label {
-  color: rgba(var(--accent-rgb), 0.72);
-  font-weight: 500;
+  color: rgba(var(--accent-rgb), 0.88);
+  font-weight: 600;
 }
 
 /* Primary CTA. The accent as a functional fill — colour means "this is the
