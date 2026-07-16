@@ -58,6 +58,7 @@ main {
    than shouts, and recurs down the page so it reads as a system. */
 .label {
   color: rgba(var(--accent-rgb), 0.72);
+  font-weight: 500;
 }
 
 /* Primary CTA. The accent as a functional fill — colour means "this is the
