@@ -161,7 +161,7 @@
         var message = ticketForm.querySelector('textarea[name="message"]').value.trim();
         var subject = 'Charleston Fashion & Design attendance inquiry';
         var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
-        var mailtoLink = 'mailto:hello@charlestonfashiondesign.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        var mailtoLink = 'mailto:info@charlestonfd.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         window.location.href = mailtoLink;
         ticketStatus.textContent = 'Your email app should open with your inquiry prefilled.';
         ticketForm.reset();

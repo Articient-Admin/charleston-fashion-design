@@ -136,7 +136,13 @@
         <div class="rounded border border-white/10 bg-black p-8">
           <p class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Request Details</p>
           <p class="sans mt-4 text-sm leading-7 text-white/60">If you would like to receive updates on access and attendance, please send a short note below and the team will follow up.</p>
-          <a href="tickets.html" class="sans mt-8 inline-block rounded-full bg-white px-6 py-3 text-xs font-semibold uppercase tracking-[0.24em] text-black transition hover:bg-white/90">Request Details</a>
+          <form id="home-ticket-form" class="mt-6 space-y-4" data-contact-form="attendance">
+            <input type="text" name="name" placeholder="Name" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30" />
+            <input type="email" name="email" placeholder="Email" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30" />
+            <textarea name="message" rows="3" placeholder="Tell us about your interest in attending" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30"></textarea>
+            <button type="submit" class="sans w-full rounded-full bg-white px-5 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-black transition hover:bg-white/90">Request Details</button>
+            <p id="home-ticket-form-status" class="sans text-sm text-white/60" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
@@ -217,6 +223,23 @@
         }
       });
     })();
+
+    var homeTicketForm = document.getElementById('home-ticket-form');
+    var homeTicketStatus = document.getElementById('home-ticket-form-status');
+    if (homeTicketForm && homeTicketStatus) {
+      homeTicketForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        var name = homeTicketForm.querySelector('input[name="name"]').value.trim();
+        var email = homeTicketForm.querySelector('input[name="email"]').value.trim();
+        var message = homeTicketForm.querySelector('textarea[name="message"]').value.trim();
+        var subject = 'Charleston Fashion & Design attendance inquiry';
+        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
+        var mailtoLink = 'mailto:info@charlestonfd.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+        homeTicketStatus.textContent = 'Your email app should open with your inquiry prefilled.';
+        homeTicketForm.reset();
+      });
+    }
   </script>
 
 </body>

@@ -182,7 +182,7 @@
         var message = sponsorshipForm.querySelector('textarea[name="message"]').value.trim();
         var subject = 'Charleston Fashion & Design sponsorship inquiry';
         var body = 'Name: ' + name + '\nEmail: ' + email + '\nOrganization: ' + organization + '\nTrack: ' + track + '\n\nMessage:\n' + message;
-        var mailtoLink = 'mailto:hello@charlestonfashiondesign.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        var mailtoLink = 'mailto:info@charlestonfd.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
         window.location.href = mailtoLink;
         sponsorshipStatus.textContent = 'Your email app should open with your inquiry prefilled.';
         sponsorshipForm.reset();
