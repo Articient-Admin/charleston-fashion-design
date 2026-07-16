@@ -54,6 +54,15 @@ main {
   color: var(--accent);
 }
 
+/* The wordmark. Cormorant Garamond 400 / 0.16em is the logo's own spec, per
+   the brief — this renders the mark in type rather than approximating it in
+   Playfair, whose ampersand is a heavy calligraphic swash. */
+.wordmark {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+}
+
 /* Section labels: the accent's structural home. Muted so it whispers rather
    than shouts, and recurs down the page so it reads as a system. */
 .label {
