@@ -11,7 +11,7 @@
 (function () {
   'use strict';
 
-  var ENDPOINT = 'https://formspree.io/f/REPLACE_WITH_FORM_ID';
+  var ENDPOINT = 'https://formspree.io/f/mlgqjzeq';
   var CONFIGURED = ENDPOINT.indexOf('REPLACE_WITH_FORM_ID') === -1;
 
   var SUBJECTS = {
