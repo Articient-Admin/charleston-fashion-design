@@ -27,3 +27,10 @@ unnamed*.webp
 # OS cruft
 .DS_Store
 Thumbs.db
+
+# Raw event photography — Galina Vyrva Photography, watermarked proofs.
+# Not licensed for publication (the brief excludes her work pending clearance),
+# referenced by no page, and the deploy publishes the repo root — so tracking
+# these would put a photographer's proofs on a public site at guessable URLs.
+# Files remain on disk; they are simply not published.
+images/20250910-*.jpg
