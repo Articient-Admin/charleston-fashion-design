@@ -155,6 +155,7 @@
           <p class="sans label text-[10px] uppercase tracking-[0.25em]">Request Details</p>
           <p class="sans mt-4 text-sm leading-7 text-white/60">If you would like to receive updates on access and attendance, please send a short note below and the team will follow up.</p>
           <form id="home-ticket-form" class="mt-6 space-y-4" data-contact-form="attendance">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0" />
             <input type="text" name="name" placeholder="Name" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30" />
             <input type="email" name="email" placeholder="Email" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30" />
             <textarea name="message" rows="3" placeholder="Tell us about your interest in attending" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30"></textarea>
@@ -241,24 +242,8 @@
         }
       });
     })();
-
-    var homeTicketForm = document.getElementById('home-ticket-form');
-    var homeTicketStatus = document.getElementById('home-ticket-form-status');
-    if (homeTicketForm && homeTicketStatus) {
-      homeTicketForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        var name = homeTicketForm.querySelector('input[name="name"]').value.trim();
-        var email = homeTicketForm.querySelector('input[name="email"]').value.trim();
-        var message = homeTicketForm.querySelector('textarea[name="message"]').value.trim();
-        var subject = 'Charleston Fashion & Design attendance inquiry';
-        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
-        var mailtoLink = 'mailto:info@charlestonfd.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        window.location.href = mailtoLink;
-        homeTicketStatus.textContent = 'Your email app should open with your inquiry prefilled.';
-        homeTicketForm.reset();
-      });
-    }
   </script>
 
+  <script src="forms.js"></script>
 </body>
 </html>

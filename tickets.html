@@ -84,6 +84,7 @@
           <p class="sans text-[10px] uppercase tracking-[0.25em] text-white/40">Request Details</p>
           <p class="sans mt-4 text-sm leading-7 text-white/60">Please send your information below if you would like updates on ticket availability and event access.</p>
           <form id="ticket-form" class="mt-6 space-y-4" data-contact-form="attendance">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;height:0;width:0" />
             <input type="text" name="name" placeholder="Name" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30" />
             <input type="email" name="email" placeholder="Email" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30" />
             <textarea name="message" rows="4" placeholder="Tell us about your interest in attending" required class="sans w-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-white/30"></textarea>
@@ -152,24 +153,8 @@
         }
       });
     })();
-
-    var ticketForm = document.getElementById('ticket-form');
-    var ticketStatus = document.getElementById('ticket-form-status');
-    if (ticketForm && ticketStatus) {
-      ticketForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-        var name = ticketForm.querySelector('input[name="name"]').value.trim();
-        var email = ticketForm.querySelector('input[name="email"]').value.trim();
-        var message = ticketForm.querySelector('textarea[name="message"]').value.trim();
-        var subject = 'Charleston Fashion & Design attendance inquiry';
-        var body = 'Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message;
-        var mailtoLink = 'mailto:info@charlestonfd.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        window.location.href = mailtoLink;
-        ticketStatus.textContent = 'Your email app should open with your inquiry prefilled.';
-        ticketForm.reset();
-      });
-    }
   </script>
 
+  <script src="forms.js"></script>
 </body>
 </html>
